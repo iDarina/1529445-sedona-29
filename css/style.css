@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    width: 100%;
+}
+.header {
+    width: 1200px;
+
+}
+
+.header-top {
+    height: 56px;
+    margin-top: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.header-top a {
+    color: black;
+    text-decoration: none;
+}
+.header-top a:hover {
+    color: #669EC0;
+}
+.header-image {
+    width: 1200px;
+    height: 509px;
+    margin: auto;
+}
+.title-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16.5px;
+    align-items: center;
+}
+.title-main h2 {
+    font-weight: bold;
+    font-size: 21px;
+    width: 470px;
+    height: 80px;
+    text-transform: uppercase;
+}
+.title-main p {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.list-advantages {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 256px 330px 256px 256px;
+}
+.real-town {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.first-photo-advantages {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.house {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.eat {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.souvenirs {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.second-photo-advantages {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.devils-bridge {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.area {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;    
+}
+.beautiful-road {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;    
+}  
+.tourists {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;    
+}  
+
+.footer {
+    display: flex;
+}
+.contacts {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+
+}
+.social-networks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.author {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+}
