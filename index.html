@@ -4,35 +4,36 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
 
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+    <div class="wrapper">
     <header class="header">
-        <div class="container">
-        <ul class="header-top">
-            <li>
+      <div class="header-top"> 
+        <a class="logo" href="logo"><img src="img/logo.png" alt="логотип"></a>
+        <nav>
+        <ul>
+            <li class="first">
               <a href="">Информация</a>
             </li>
-            <li>
+            <li class="first">
               <a href="">Фото и видео</a>
             </li>
-            <li>
-              <a href="">
-                <img src="img/logo.png" alt="logo">
-              </a>
-            </li>
-            <li>
+            <li class="second">
               <a href="">Карта штата</a>
             </li>
-            <li>
+            <li class="second">
               <a href="">Гостиницы</a>
             </li>
         </ul>
+      </nav>
+      </div>
         <div class="header-image">
           <img src="img/background-photo.jpg" alt="background-photo">
         </div>
-      </div>
+      
     </header>
 
     <main>
@@ -43,7 +44,7 @@
 
 
       <section class="advantages">
-        <div class="container">
+       
           <ul class="list-advantages">
             <li class="real-town">
               <h3>Настоящий городок</h3>
@@ -92,21 +93,21 @@
               <p>Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
-      </div>
+     
       </section>
       <section class="interest">
-        <div class="container">
+        
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="map">
           <img src="img/map.jpg" alt="карта" width="1199" height="594">
         </div>
-      </div>
+      
       </section>
     </main> 
     
     <footer class="footer">
-      <div class="container">
+    
         <div class="contacts">
           <p>#visitSEDONA</p>
           <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
@@ -126,9 +127,12 @@
         </div>
         <div class="author">
           <p>website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/icon/logo-htmlacademy.svg" alt="">
+        </a>
         </div>  
-      </div>
+      
     </footer>
+  </div>
   </body>
 </html>
