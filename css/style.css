@@ -12,7 +12,7 @@ body {
     font-family: "PT Sans", "Arial" sans-serif;
     background-color: white;
 }
-
+           /* Главная */
 .header {
     width: 100%;
 
@@ -156,4 +156,23 @@ body {
     display: flex;
     align-items: end;
     flex-direction: row;
+}
+
+                   /* Каталог */
+
+.filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.infrastructure {
+    display: flex;
+    flex-direction: column;
+}
+.housing {
+    display: flex;
+    flex-direction: column;
+}
+.cost {
+    display: flex;
+    flex-direction: column;
 }
