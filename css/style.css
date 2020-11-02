@@ -2,6 +2,12 @@ body {
     margin: 0;
     font-family: 'PT Sans', 'Arial', sans-serif;
     background: #F2F2F2;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    background: #f2f2f2;
 }
 
 .wrapper {
@@ -28,6 +34,29 @@ body {
     margin-right: auto; 
     width: 100px;  
 }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-top li {
+    margin-top: 17px;
+    height: 26px;
+    padding: 0;
+}
+.title-font {
+    display: flex;
+}
+.left {
+    padding-left: 72px;
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+    padding-right: 72px;
+}
+
 .header-top ul {
     display: flex;
     justify-content: space-around;
@@ -36,8 +65,6 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .header-top a {
@@ -47,10 +74,23 @@ body {
 .header-top a:hover {
     color: #669EC0;
 }
-.header-image {
-    width: 100%;
-    height: 509px;
+.top-image {
+    padding-top: 76px;
+    padding-bottom: 80px;
+    padding-left: 371.38px;
+    padding-right: 371.96px;
+}
 
+.header-image {
+    height: 508px;
+    background: #517ca4 url("../img/background-photo.jpg") no-repeat 50% 21%;
+}
+.top-image::after {
+    left: 0;
+    bottom: 0;
+    width: 1200px;
+    height: 57px;
+    background: url("../img/mask-header.png") no-repeat 50% 50%;
 }
 .title-main {
     display: flex;
@@ -68,6 +108,7 @@ body {
 .title-main p {
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 51px;
 }
 .list-advantages {
     list-style-type: none;
@@ -102,18 +143,34 @@ body {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.house img {
+    margin-left: auto;
+    margin-right: auto;
 }
 .eat {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .souvenirs {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .second-photo-advantages {
     grid-column-start: 1;
@@ -128,29 +185,50 @@ body {
     grid-row-end: 3;
     background-color: #81B3D2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .area {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
     grid-row-end: 4;
-    background-color: #EEEEEE;    
+    background-color: #EEEEEE; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 .beautiful-road {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 4;  
-    background-color: #EEEEEE;  
+    background-color: #EEEEEE; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }  
 .tourists {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 4; 
-    background-color: #EEEEEE;   
+    background-color: #EEEEEE;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }  
-
+.interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer {
     display: flex;
     justify-content: space-around;
@@ -179,6 +257,7 @@ body {
 .filter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-image: url("../img/background-catalog.jpg");
 }
 .infrastructure {
     display: flex;
@@ -191,4 +270,13 @@ body {
 .cost {
     display: flex;
     flex-direction: column;
+}
+.amara-resort {
+    display: flex;
+}
+.desert-quail-inn {
+    display: flex;
+}
+.villas-at-poco-diablo {
+    display: flex;
 }
