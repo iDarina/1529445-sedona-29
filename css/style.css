@@ -258,6 +258,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: url("../img/background-catalog.jpg");
+    background-color: #517ca4;
+    color: white;
 }
 .infrastructure {
     display: flex;
@@ -274,9 +276,57 @@ ul {
 .amara-resort {
     display: flex;
 }
+.results h3 {
+    font-size: 21px;
+}
+.results p {
+    font-size: 14px;
+}
 .desert-quail-inn {
     display: flex;
 }
 .villas-at-poco-diablo {
     display: flex;
+}
+.more-details {
+    color: white;
+    background-color: #81B3D2;
+    width: 110px;
+    height: 27px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.to-book {
+    color: white;
+    background-color: #766357;
+    width: 142px;
+    height: 27px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.rating {
+    background: #F2F2F2;
+    width: 110px;
+    height: 27px;
+    display: flex;
+    color: #666666;
+}
+.rating p {
+    margin: auto;
+}
+.search-results {
+    display: flex;
+}
+.search-results button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.found {
+    font-weight: bold;
+    font-size: 21px;
 }
