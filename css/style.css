@@ -238,14 +238,19 @@ ul {
    display: flex;
    flex-direction: column;
    align-items: start;
+   font-weight: bold;
+   font-size: 21px;
+}
+.contacts a {
+    color: black;
+    text-decoration: none;
 }
 .social-networks li {
     list-style-type: none;
+    display: inline-block;
 }
-.social-networks {
-    display: flex;
-    align-items: center;
-}
+
+
 .author {
     display: flex;
     align-items: end;
@@ -253,174 +258,18 @@ ul {
 }
                     /* форма */
     
-.search-form-container {
-    width: 568px;
-    margin: 0 auto;
-}
-
-.search-btn {
-    display: block;
-    width: 568px;
-    margin: 0 auto;
-    color: #ffffff;
-    padding: 30px 0 30px;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-decoration: none;
-    background: #766357;
-    text-align: center;
-}
-
 .search-form {
     top: 85px;
     left: 0;
     width: 568px;
     padding: 57px 55px;
     margin: 0 auto;
+    box-sizing: border-box;
     line-height: 26px;
     text-align: left;
     font-weight: bold;
     background: #ffffff;
     z-index: 1;
-}
-.sreach-form .form-line:nth-child(2) {
-    margin-bottom: 30px;
-}
-
-.search-form label {
-    float: left;
-    padding: 5px 0 7px;
-}
-
-.search-form .field {
-    float: right;
-    line-height: 26px;
-    padding: 4px 15px 8px;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    background: #f2f2f2;
-}
-.search-form .field:hover {
-    background: #ebebeb;
-}
-
-.search-form .field:focus {
-    background: #ffffff;
-    outline: 2px solid #e5e5e5;
-}
-
-.search-form .date {
-    width: 346px;
-    padding-right: 37px;
-}
-
-.search-form .icon-calendar {
-    position: absolute;
-    right: 6px;
-    bottom: 0;
-    font-size: 21px;
-    font-weight: 200;
-    line-height: 38px;
-    color: #c2c2c2;
-    cursor: pointer;
-}
-
-.search-form .icon-calendar:hover {
-    color: #000000;
-}
-
-.search-form .icon-calendar:active {
-    color: #81b3d2;
-}
-
-.search-form .half-width {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-.half-width .unit {
-    width: 114px;
-    padding-left: 55px;
-    padding-right: 50px;
-}
-
-.half-width:first-child .unit {
-    margin-right: 3px;
-}
-
-.half-width:last-child label {
-    margin-left: 50px;
-}
-
-.half-width .unit-container {
-    position: relative;
-}
-
-.unit-container .btn {
-    position: absolute;
-    top: 0;
-    padding: 6px 9px;
-    line-height: 26px;
-    color: #a9a9a9;
-    background: #f2f2f2;
-    border: none;
-    outline: none;
-}
-
-.unit-container .btn:hover {
-    color: #000000;
-}
-
-.unit-container .btn:active {
-    color: #81b3d2;
-}
-
-.unit-container .minus-btn {
-    left: 112px;
-}
-
-.unit-container .plus-btn {
-    right: 0;
-}
-
-.half-width:first-child .plus-btn {
-    right: 3px;
-}
-
-.half-width:last-child .minus-btn {
-    left: 115px;
-}
-
-.search-form .find-btn {
-    display: block;
-    width: 458px;
-    margin: 0 auto;
-    margin-top: 54px;
-    padding: 14px 10px 15px;
-    box-sizing: border-box;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #81b3d2;
-    border: none;
-    outline: none;
-}
-
-.search-form .find-btn:hover {
-    background: #669ec0;
-}
-
-.search-form .find-btn:active {
-    background: #5496bd;
-}
-
-.search-form .find-btn:active span {
-    opacity: 0.3;
 }
 
                    /* Каталог */
@@ -446,18 +295,31 @@ ul {
 }
 .amara-resort {
     display: flex;
+    height: 150px;
+    border: 1px solid #E5E5E5;
+}
+.results img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 73px;
 }
 .results h3 {
     font-size: 21px;
+    margin-bottom: 23.5px;
 }
 .results p {
     font-size: 14px;
 }
+
 .desert-quail-inn {
     display: flex;
+    height: 150px;
+    border: 1px solid #E5E5E5;
 }
 .villas-at-poco-diablo {
     display: flex;
+    height: 150px;
+    border: 1px solid #E5E5E5;
 }
 .more-details {
     color: white;
