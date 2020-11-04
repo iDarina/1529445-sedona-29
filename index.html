@@ -108,7 +108,7 @@
         <div class="map">
           <img src="img/map.jpg" alt="карта" width="1199" height="594">
         </div>
-        <div class="form-search-hotels">
+        <!-- <div class="form-search-hotels">
           <form action="">
             <fieldset>
             <legend>Поиск гостиницы в Седоне</legend>
@@ -119,7 +119,43 @@
             <input type="button" value="Найти" name="find"></input>
           </fieldset>
           </form>
-        </div>
+        </div> -->
+        <div class="search-form-container">
+          <a class="search-btn" href="./form.html">Поиск гостиницы в Седоне</a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form-line clearfix">
+              <label for="day-in">Дата заезда:</label>
+              <input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2016" required>
+              <div class="icon-calendar"></div>
+            </div>
+            <div class="form-line clearfix">
+              <label for="day-out">Дата выезда:</label>
+              <input class="date field" type="text" id="day-out" name="out" placeholder="4 июля 2016">
+              <div class="icon-calendar"></div>
+            </div>
+            <div class="form-line clearfix">
+              <div class="half-width">
+                <label for="adult">Взрослые:</label>
+                <div class="unit-container">
+                  <button class="btn minus-btn" type="button">
+                    <i class="icon-minus"></i>
+                  </button>
+                  <input class="unit field" type="text" name="adults" id="adult" value="2" required>
+                  <button class="btn plus-btn" type="button">
+                    <i class="icon-plus"></i>
+                  </button>
+                </div>
+                <div class="half-width">
+                  <label for="kid">Дети:</label>
+                  <div class="unit-container clearfix">
+                    <button class="btn minus-btn" type="button">
+                      <i class="icon-minus"></i>
+                    </button>
+                    <input class="unit field" type="text" name="kids" id="kid" value="0">
+                    <button class="btn plus-btn" type="button">
+                      <i class="icon-plus"></i>
+                    </button>
+                  </div>
       
       </section>
     </main> 
