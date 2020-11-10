@@ -92,7 +92,9 @@ ul {
     height: 508px;
     background: #517ca4 url("../img/background-photo.jpg") no-repeat 50% 21%;
 }
-.top-image::after {
+.header-image::after {
+    content: '';
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 1200px;
