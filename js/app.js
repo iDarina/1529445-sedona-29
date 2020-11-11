@@ -11,17 +11,22 @@ function initMap() {
 //
 
 //Кнопка открытия формы
-let searchFormWindow = document.getElementById("searchFormWindow");
 
 let searchFormControlBtn = document.getElementById("search-btn");
 
-searchFormControlBtn.onclick = function() {
-    if(searchFormWindow.style.display === "block"){
-        searchFormWindow.style.display = "none";
-    } else {
-        searchFormWindow.style.display = "block";
-    }
-}
+addEventListenerIfNotNull(searchFormControlBtn, "click", function() {
+	let searchFormWindow = document.getElementById("searchFormWindow");
+	if(!searchFormWindow){
+		console.log("Failed to find 'searchFormWindow'");
+		return;
+	}
+	if(searchFormWindow.style.display === "block"){
+		searchFormWindow.style.display = "none";
+	} else {
+		searchFormWindow.style.display = "block";
+	}
+	})
+
 //
 
 //Плюс/минус в форме
@@ -29,15 +34,22 @@ let adultsMinusBtn = document.getElementById("adult-minus-btn");
 let adultsPlusBtn = document.getElementById("adult-plus-btn");
 let kidsMinusBtn = document.getElementById("kids-minus-btn");
 let kidsPlusBtn = document.getElementById("kids-plus-btn");
-let adultQtyField = document.getElementById("adultQty");
-let kidQtyField = document.getElementById("kidQty");
 
-adultsMinusBtn.addEventListener("click", adultMinusControl);
-adultsPlusBtn.addEventListener("click", adultPlusControl);
-kidsMinusBtn.addEventListener("click", kidMinusControl);
-kidsPlusBtn.addEventListener("click", kidPlusControl);
+addEventListenerIfNotNull(adultsMinusBtn, "click", adultMinusControl);
+addEventListenerIfNotNull(adultsPlusBtn, "click", adultPlusControl);
+addEventListenerIfNotNull(kidsMinusBtn, "click", kidMinusControl);
+addEventListenerIfNotNull(kidsPlusBtn, "click", kidPlusControl);
+
+function addEventListenerIfNotNull(element, event, func){
+	if(!element)
+		return;
+	
+	element.addEventListener(event, func);
+}
 
 function adultMinusControl() {
+  let adultQtyField = document.getElementById("adultQty");
+  let kidQtyField = document.getElementById("kidQty");
   if(adultQtyField.value > 0){
     let adultQtyNum = adultQtyField.value;
     adultQtyNum = parseInt(adultQtyNum);
@@ -47,6 +59,7 @@ function adultMinusControl() {
 }
 
 function adultPlusControl() {
+  let adultQtyField = document.getElementById("adultQty");
   if(adultQtyField.value < 9){
     let adultQtyNum = adultQtyField.value;
     adultQtyNum = parseInt(adultQtyNum);
@@ -56,6 +69,7 @@ function adultPlusControl() {
 }
 
 function kidMinusControl() {
+  let kidQtyField = document.getElementById("kidQty");
   if(kidQtyField.value > 0){
     let kidQtyNum = kidQtyField.value;
     kidQtyNum = parseInt(kidQtyNum);
@@ -65,6 +79,7 @@ function kidMinusControl() {
 }
 
 function kidPlusControl() {
+  let kidQtyField = document.getElementById("kidQty");
   if(kidQtyField.value < 9){
     let kidQtyNum = kidQtyField.value;
     kidQtyNum = parseInt(kidQtyNum);
